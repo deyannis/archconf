@@ -1,7 +1,14 @@
 cp tmux.conf ~/.tmux.conf
 
-
-Horizontal Split:	(Ctrl)+(B)+(+)
-Vertical Split:		(Ctrl)+(B)+(-)
-Enable Scrolling:	(Ctrl)+(B)+([)
-Disable Scrolling:	Esc
+--------------------------------------------------------------------------
+Horizontal Split:	(Ctrl)+(b)+(+)
+Vertical Split:		(Ctrl)+(b)+(-)
+Enable Scrolling:	(Ctrl)+(b)+([)
+Disable Scrolling:	(Esc)
+Status Bar On/Off:	(Ctrl)+(b)+(b)
+Man Page In New Window:	(Ctrl)+(b)+(m) + <keyword to rearch> + (Enter)
+				e.g.: (Ctrl)+(b)+(m) + <wget> + (Enter)
+Move Around Windows:	(Ctrl)+(b)+(arrows)
+			(Ctrl)+(b)+(vim style "h,j,k,l")
+Resize Windows:		(Ctrl)+(b)+(arrows) !Without leaving Ctrl!
+--------------------------------------------------------------------------
