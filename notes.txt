@@ -16,3 +16,6 @@
 *  Dropbox opens Audacious						*
 *	xdg-mime default Thunar.desktop inode/directory			*
 =========================================================================
+*  Git: stop checking SSL cert						*
+*	git config --global http.sslVerify false			*
+=========================================================================
