@@ -1,0 +1,19 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# ls with color and human readabe sizes
+alias ls='ls -h --color=auto'
+
+# Minimal command prompt
+PS1='\[\e[0;31m\]\u@\h -> \[\e[0m\]'
+
+# Prevent line wrap
+shopt -s checkwinsize
+
+# Tab autocomplete
+complete -cf sudo
+complete -cd man

@@ -1,5 +1,2 @@
-bash autocomplete rules
-
-needs bash-completion
-
-TODO fix errors
+cp bashrc_user ~/.bashrc
+sudo cp bashrc_root /root/.bashrc
