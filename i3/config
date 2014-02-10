@@ -147,4 +147,39 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+	position top
+	colors {
+		background #000000
+		statusline #FFFFFF
+
+		focused_workspace  #ffffff #6600FF
+		active_workspace   #ffffff #6600FF 
+		inactive_workspace #ffffff #6600FF
+		urgent_workspace   #ffffff #2f343a
+	    }
 }
+
+# class                 border  backgr. text    indicator
+#client.focused          #4c7899 #285577 #ffffff #2e9ef4
+#client.focused_inactive #333333 #5f676a #ffffff #484e50
+#client.unfocused        #333333 #222222 #888888 #292d2e
+#client.urgent           #2f343a #900000 #ffffff #900000
+
+client.focused          #6600FF #6600FF #ffffff #6600FF
+client.focused_inactive #6600FF #222222 #ffffff #6600FF
+client.unfocused        #6600FF #222222 #ffffff #6600FF
+client.urgent           #6600FF #222222 #ffffff #6000FF
+
+# Floating Audacious
+for_window [class="Audacious"] floating enable
+for_window [class="Audacious"] border none
+for_window [class="Google-chrome" title="Google Chrome"] border none
+for_window [class="Thunderbird"] border none
+for_window [class="Gcalctool"] floating enable 
+
+
+# Window Border
+new_window pixel 3
+
+# Wallpaper
+exec --no-startup-id sh ~/.fehbg
