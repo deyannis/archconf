@@ -1,0 +1,32 @@
+#############################
+## Sound
+"amixer -q sset Master 2+"
+	XF86AudioRaiseVolume
+
+"amixer -q sset Master 2-"
+	XF86AudioLowerVolume
+
+"amixer sset Master toggle"
+	XF86AudioMute
+
+#############################
+## Audacious
+"audacious -t"
+	Mod2 + XF86AudioPlay
+
+"audacious -s"
+	Mod2 + XF86AudioStop
+
+"audacious -r"
+	Mod2 + XF86AudioPrev
+
+"audacious -f"
+	Mod2 + XF86AudioNext
+
+#############################
+## Display
+"arandr"
+	Alt+Mod2 + F4
+
+"i3lock -i ~/Pictures/Wallpapers/ss2.png -t"
+	Mod2+Mod4 + F4
