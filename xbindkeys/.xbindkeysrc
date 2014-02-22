@@ -30,3 +30,6 @@
 
 "i3lock -i ~/Pictures/Wallpapers/ss2.png -t"
 	Mod2+Mod4 + F4
+
+"xfce4-screenshooter -f"
+	Mod2 + Print
