@@ -175,7 +175,7 @@ for_window [class="Audacious"] floating enable
 for_window [class="Audacious"] border none
 for_window [class="Google-chrome" title="Google Chrome"] border none
 for_window [class="Thunderbird"] border none
-for_window [class="Gcalctool"] floating enable 
+for_window [class="Gnome-calculator"] floating enable 
 
 
 # Window Border
