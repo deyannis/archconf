@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# this script tries to emulate the behaviour of bsd daemon(3) call
+# runs a job with its std streams closed and detaches from terminal
+
+if test -z $1; then
+    echo usage: $(basename $0) job && exit 1
+fi
+
+(exec "$@" &) > /dev/null 2>&1
