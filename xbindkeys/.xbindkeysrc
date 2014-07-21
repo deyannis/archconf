@@ -1,14 +1,14 @@
 #############################
 ## Sound
-"amixer -q sset Master 2+"
+#"amixer -q sset Master 2+"
 "/usr/bin/pulseaudio-ctl up"
 	XF86AudioRaiseVolume
 
-"amixer -q sset Master 2-"
+#"amixer -q sset Master 2-"
 "/usr/bin/pulseaudio-ctl down"
 	XF86AudioLowerVolume
 
-"amixer sset Master toggle"
+#"amixer sset Master toggle"
 "/usr/bin/pulseaudio-ctl mute"
 	XF86AudioMute
 
