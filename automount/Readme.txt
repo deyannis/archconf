@@ -1,3 +1,3 @@
+sudo su
 usermod -G storage,wheel <user>
-
-Rule dest:	/etc/polkit-1/rules.d/
+cp 10-enable-mount.rules /etc/polkit-1/rules.d

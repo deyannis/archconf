@@ -1,5 +1,4 @@
-config			~/.i3
-
-i3status.conf		/etc
-
-i3-sensible-terminal	/usr/bin/
+cp config ~/.i3
+sudo su
+cp i3status.conf /etc
+cp i3-sensible-terminal /usr/bin/

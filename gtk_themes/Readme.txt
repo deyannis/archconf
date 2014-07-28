@@ -1,1 +1,2 @@
-gtkrc location:	/usr/share/gtk-2.0
+sudo su
+cp gtkrc /usr/share/gtk-2.0

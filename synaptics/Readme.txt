@@ -1,1 +1,2 @@
-50-synaptics.conf	/etc/X11/xorg.conf.d
+sudo su
+cp 50-synaptics.conf /etc/X11/xorg.conf.d
