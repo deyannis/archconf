@@ -1,5 +1,5 @@
 =========================================================================
-*				Notes and tweaks			*
+*                            Notes and tweaks                           *
 =========================================================================
 *  Set efault browser to chrome						*
 *	xdg-mime default google-chrome.desktop x-scheme-handler/https	*
@@ -7,4 +7,9 @@
 =========================================================================
 *  Disable mobo speaker							*
 *	echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf		*
-========================================================================
+=========================================================================
+*  Enable thunar samba and remote locations browsing			*
+*	sudo pacman -S gvfs-smb sshfs					*
+*	from AUR: hal-info hal thunar-vfs tunar-shares-plugin		*
+*	smb example:	thunar -> NETWORK -> smb://xxxxxx		*
+=========================================================================
