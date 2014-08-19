@@ -13,3 +13,6 @@
 *	from AUR: hal-info hal thunar-vfs tunar-shares-plugin		*
 *	smb example:	thunar -> NETWORK -> smb://xxxxxx		*
 =========================================================================
+*  Dropbox opens Audacious						*
+*	xdg-mime default Thunar.desktop inode/directory			*
+=========================================================================
