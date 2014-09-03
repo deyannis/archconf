@@ -15,14 +15,23 @@ fi
 # NumLock On
 exec numlockx &
 
+# Volume Icon
+exec volumeicon &
+
 # Dropox
 exec dropboxd &
+
+# NetworkManager icon
+exec nm-applet &
 
 # GR - EN shift
 exec setxkbmap -option "grp:switch,grp:alt_shift_toggle,grp_led:scroll" -layout "us,gr"  &
 
 # Multimedia keys
 exec xbindkeys &
+
+# Mouse Speed
+xset m 3/2 0
 
 # i3 WM
 exec i3
