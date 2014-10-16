@@ -1,1 +1,1 @@
-cp .xbindkeysrc ~
+cp xbindkeysrc ~/.xbindkeysrc

@@ -1,5 +1,5 @@
 " Enable syntax highlighting
-syntax enable
+syntax on
 
 " Show matching brackets when text indicator is over them
 set showmatch
@@ -9,3 +9,6 @@ set ignorecase
 
 " Highlight search results
 set hlsearch
+
+" Jump to currently maching search result
+set incsearch
