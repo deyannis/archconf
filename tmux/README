@@ -1,1 +1,7 @@
 cp tmux.conf ~/.tmux.conf
+
+
+Horizontal Split:	(Ctrl)+(B)+(+)
+Vertical Split:		(Ctrl)+(B)+(-)
+Enable Scrolling:	(Ctrl)+(B)+([)
+Disable Scrolling:	Esc
