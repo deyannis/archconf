@@ -1,0 +1,4 @@
+GR config
+
+sudo su
+cp ntpd.conf /etc
