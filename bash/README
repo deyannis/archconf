@@ -1,2 +1,2 @@
 cp bashrc_user ~/.bashrc
-sudo cp bashrc_root /root/.bashrc
+cp bashrc_root /root/.bashrc

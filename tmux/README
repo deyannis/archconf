@@ -1,5 +1,4 @@
-cp tmux.conf ~/.tmux.conf
-
+NOTE:
 --------------------------------------------------------------------------
 Horizontal Split:	(Ctrl)+(b)+(+)
 Vertical Split:		(Ctrl)+(b)+(-)
@@ -12,3 +11,5 @@ Move Around Windows:	(Ctrl)+(b)+(arrows)
 			(Ctrl)+(b)+(vim style "h,j,k,l")
 Resize Windows:		(Ctrl)+(b)+(arrows) !Without leaving Ctrl!
 --------------------------------------------------------------------------
+
+cp tmux.conf ~/.tmux.conf
