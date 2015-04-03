@@ -4,6 +4,7 @@
 #	Author: Ras
 #
 #	Setup a usable Arch Linux box
+##
 
 xserv="xorg-server xorg-server-utils xorg-xinit xorg-twm"
 intel="xf86-video-intel"
@@ -18,6 +19,10 @@ sound="alsa-firmware alsa-lib alsa-oss alsa-plugins alsa-tools alsa-utils pulsea
 
 gnome_tools="gnome-terminal gnome-calculator"
 
+net_tools="wget curl net-tools ethtool traceroute tcpdump openssh"
+
+repo="git subversion"
+
 nmanager="networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc network-manager-applet xfce4-notifyd gnome-keyring"
 
 libre="libreoffice hunspell hunspell-en hyphen hyphen-en libmythes mythes-en"
@@ -29,3 +34,5 @@ image_proc="eog gimp gnuplot"
 pdf="evince"
 
 mozilla="firefox thunderbird"
+
+xinit_conf_deps="tmux xbindkeys volumeicon"
