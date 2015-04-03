@@ -1,0 +1,31 @@
+#!/bin/bash
+
+##
+#	Author: Ras
+#
+#	Setup a usable Arch Linux box
+
+xserv="xorg-server xorg-server-utils xorg-xinit xorg-twm"
+intel="xf86-video-intel"
+ati="xf86-video-ati"
+themes_icons="gnome-icon-theme gnome-themes-standard faience-icon-theme"
+fonts="ttf-dejavu ttf-freefont ttf-liberation otf-ipafont"
+i3="i3 dmenu"
+
+storage="thunar gvfs polkit-gnome"
+
+sound="alsa-firmware alsa-lib alsa-oss alsa-plugins alsa-tools alsa-utils pulseaudio pulseaudio-alsa pavucontrol"
+
+gnome_tools="gnome-terminal gnome-calculator"
+
+nmanager="networkmanager networkmanager-openconnect networkmanager-openvpn networkmanager-pptp networkmanager-vpnc network-manager-applet xfce4-notifyd gnome-keyring"
+
+libre="libreoffice hunspell hunspell-en hyphen hyphen-en libmythes mythes-en"
+latex="texlive-core texlive-htmlxml texlive-latexextra texlive-publishers dblatex"
+tex_edit="gedit vim"
+
+image_proc="eog gimp gnuplot"
+
+pdf="evince"
+
+mozilla="firefox thunderbird"
