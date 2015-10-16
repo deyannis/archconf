@@ -177,7 +177,7 @@ client.urgent           #6600FF #222222 #ffffff #6000FF
 # Floating Audacious
 for_window [class="Audacious"] floating enable
 for_window [class="Audacious"] border none
-for_window [class="Google-chrome" title="Google Chrome"] border none
+for_window [class="google-chrome"] border none
 for_window [class="Thunderbird"] border none
 for_window [class="Gnome-calculator"] floating enable 
 for_window [class="Xfce4-notifyd"] floating enable
