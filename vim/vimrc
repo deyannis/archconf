@@ -12,3 +12,10 @@ set hlsearch
 
 " Jump to currently maching search result
 set incsearch
+
+" Light background
+set background=light
+
+" 80 columns margin
+set colorcolumn=81
+hi ColorColumn ctermbg=20
