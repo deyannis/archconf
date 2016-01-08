@@ -1,38 +1,36 @@
-#############################
-## Sound
-#"amixer -q sset Master 2+"
+# sound settings
 "/usr/bin/pulseaudio-ctl up"
 	XF86AudioRaiseVolume
 
-#"amixer -q sset Master 2-"
 "/usr/bin/pulseaudio-ctl down"
 	XF86AudioLowerVolume
 
-#"amixer sset Master toggle"
 "/usr/bin/pulseaudio-ctl mute"
 	XF86AudioMute
 
-#############################
-## Audacious
-"audacious -t"
-	Mod2 + XF86AudioPlay
+"/usr/bin/pulseaudio-ctl mute-input"
+	XF86AudioMicMute
 
-"audacious -s"
-	Mod2 + XF86AudioStop
-
-"audacious -r"
-	Mod2 + XF86AudioPrev
-
-"audacious -f"
-	Mod2 + XF86AudioNext
-
-#############################
-## Display
+# display settings
 "arandr"
-	Alt+Mod2 + F4
+	XF86Display
 
-"i3lock -i ~/Pictures/Wallpapers/ss2.png -t"
-	Mod2+Mod4 + F4
+# power settings
+"xfce4-power-manager-settings"
+	XF86Tools
 
+# file manager
+"thunar"
+	XF86Search
+
+# mail client
+"thunderbird"
+	XF86LaunchA
+
+# screen lock
+"i3lock -i ~/Pictures/sharks-1920x1080.png -t"
+	XF86Explorer
+
+# print screen
 "xfce4-screenshooter -f"
-	Mod2 + Print
+	Print
