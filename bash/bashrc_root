@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# ls with color and human readabe sizes
+# ls with color and human readable sizes
 alias ls='ls -h --color=auto'
 
 # Minimal command prompt
@@ -17,3 +17,6 @@ shopt -s checkwinsize
 # Tab autocomplete
 complete -cf sudo
 complete -cd man
+
+# Editor
+export EDITOR=vim
