@@ -1,6 +1,4 @@
-NOTE:	You may need to change the interfaces' names and 
-	the path to CPU temp. Also change "time athens" 
-	to your local timezone.
+NOTE:	You may need to change the interfaces' names and the path to CPU temp.
 
 cp config ~/.i3
 cp i3status.conf /etc
