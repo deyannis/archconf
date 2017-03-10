@@ -1,0 +1,6 @@
+cp uvcvideo.ko.gz /usr/lib/modules/4.9.11-1-ARCH/
+cp uvcvideo.ko.gz /usr/lib/modules/4.9.11-1-ARCH/kernel/drivers/media/usb/uvc/
+cp uvcvideo.ko.gz /usr/lib/modules/4.9.11-1-ARCH/updates/
+cp uvcvideo.ko.gz /usr/lib/modules/extramodules-4.9-ARCH/
+mkinitcpio -p linux
+reboot
