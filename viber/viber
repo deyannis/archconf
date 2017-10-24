@@ -1,0 +1,3 @@
+#!/bin/sh
+
+LD_PRELOAD=libcurl.so.3 exec env QT_AUTO_SCREEN_SCALE_FACTOR=0 /opt/viber/Viber
