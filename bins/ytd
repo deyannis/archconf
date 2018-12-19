@@ -1,3 +1,7 @@
-#!/bin/bash
+#!/bin/sh
+#
+# Author:   Dimitris Deyannis
+# E-mail:   d.deyannis@gmail.com
+# Modified: Wed 19 Dec 2018
 
 youtube-dl -x --audio-format mp3 --audio-quality 0 -o '/home/ras/Documents/YTD/%(title)s.%(ext)s' $1

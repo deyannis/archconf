@@ -1,1 +1,7 @@
+#!/bin/sh
+#
+# Author:   Dimitris Deyannis
+# E-mail:   d.deyannis@gmail.com
+# Modified: Wed 19 Dec 2018
+
 curl -F "sprunge=<-" http://sprunge.us
