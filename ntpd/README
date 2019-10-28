@@ -1,3 +1,4 @@
-NOTE:	GR config
-
 cp ntpd.conf /etc
+
+-----------------
+GR configuration
