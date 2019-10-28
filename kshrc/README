@@ -1,1 +1,5 @@
 cp kshrc ~/.kshrc
+
+---------------------------------
+For use with oksh
+Requires bash_profile and profile
