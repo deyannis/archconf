@@ -1,3 +1,8 @@
+# Author:   Dimitris Deyannis
+# E-mail:   d.deyannis@gmail.com
+# Modified: Mon 28 Oct 2019
+
+
 # sound settings
 "/usr/bin/pulseaudio-ctl up"
 	XF86AudioRaiseVolume
@@ -28,7 +33,7 @@
 	XF86LaunchA
 
 # screen lock
-"i3lock -i ~/Pictures/sharks-1920x1080.png -t"
+"i3lock -i ~/Pictures/ss.png -t"
 	XF86Explorer
 
 # print screen

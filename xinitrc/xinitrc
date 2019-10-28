@@ -1,8 +1,9 @@
 #!/bin/sh
-
-# Dimitris Deyannis
 #
-# Executed by startx (run your window manager from here)
+# Author:   Dimitris Deyannis
+# E-mail:   d.deyannis@gmail.com
+# Modified: Mon 28 Oct 2019
+
 
 # dbus magic
 if [ -d /etc/X11/xinit/xinitrc.d ]; then
@@ -11,7 +12,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
     done
     unset f
 fi
-
 
 # power manager
 xfce4-power-manager &
@@ -22,8 +22,11 @@ volumeicon &
 # dropox
 dropbox &
 
-# NetworkManager icon
+# NetworkManager applet
 nm-applet &
+
+# Bluetooth applet
+blueman-applet &
 
 # GR - EN shift
 setxkbmap -option "grp:switch,grp:alt_shift_toggle,grp_led:scroll" \
