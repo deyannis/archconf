@@ -1,0 +1,47 @@
+#!/bin/sh
+#
+# Author:   Dimitris Deyannis
+# E-mail:   d.deyannis@gmail.com
+# Modified: Fri 25 Oct 2019
+
+# include global conf
+#. /etc/ksh.kshrc
+
+# vim as default editor
+export VISUAL=vim
+
+# EMACS mode
+set -o emacs
+
+# fix ksh & st del key
+bind -m '^[[P'='^[[3~'
+
+# minimal command prompt
+PS1='\u@\h -> '
+
+
+# Linux / Openbsd specifics 
+case `uname` in
+"Linux")
+	# ls with colors and human readable sizes
+	alias ls='ls -h --color=auto'
+	#alias sysup='yaourt -Syyua; sudo pacman-clean; pacman -Sc; fstrim -va'
+	;;
+"OpenBSD")
+	# try ls with colors and human readable sizes
+	if type colorls > /dev/null
+	then
+		alias ls='colorls -h -G'
+	fi
+
+	# update locate db in a Linux fashion 
+	alias updatedb='/usr/libexec/locate.updatedb'
+	;;
+*)
+esac
+
+# pastebin
+alias sprunge='curl -F "sprunge=<-" http://sprunge.us'
+
+# update ksh 
+alias kshrc=". ~/.kshrc"

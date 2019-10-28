@@ -1,4 +1,1 @@
-archconf
-========
-
-My Arch Linux configs and some HOWTOs
+My Arch Linux configuration files
