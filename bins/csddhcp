@@ -1,6 +1,0 @@
-#!/bin/bash
-
-ifconfig enp3s0 147.52.20.141/24
-ifconfig enp3s0 netmask 255.255.255.128
-route add default gw 147.52.20.129
-echo "nameserver 147.52.80.1" > /etc/resolv.conf

@@ -1,2 +1,0 @@
-cp <bin> /usr/bin
-chmod +x /usr/bin/<bin>
