@@ -157,6 +157,8 @@ for_window [class="Thunderbird"] border none
 for_window [class="Spotify"] border none
 for_window [class="Viber"] border none
 for_window [class="Skype"] border none
+for_window [class="discord"] border none
+for_window [class="Slack"] border none
 
 # wallpaper
 exec --no-startup-id sh ~/.fehbg
