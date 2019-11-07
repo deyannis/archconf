@@ -1,0 +1,11 @@
+cp lock.sh /usr/local/bin
+chmod +x /usr/local/bin/lock.sh
+cp i3lock.service /etc/systemd/system
+systemctl enable i3lock.service
+
+-------------------------------------
+Locks the screen with i3lock before 
+putting the system to sleep
+
+Change "User" in the i3lock
+Change the picture patch in lock.sh
