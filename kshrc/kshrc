@@ -24,7 +24,7 @@ PS1='\u@\h -> '
 alias ls="ls -h --color=auto"
 
 # clean packages
-alias pacman-clean"pacman -Rsn $(pacman -Qdtq)"
+alias pacman-clean="pacman -Rsn $(pacman -Qdtq)"
 
 # update, clean and trim
 alias sysup="yaourt -Syyua; sudo pacman-clean; sudo pacman -Sc; sudo fstrim -va"
