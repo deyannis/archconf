@@ -2,11 +2,8 @@
 #
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 03 Feb 2020
+# Modified: Mon 30 Sep 2022
 
-
-# include global conf
-#. /etc/ksh.kshrc
 
 # vim as default editor
 export VISUAL=vim
@@ -20,6 +17,9 @@ bind -m '^[[P'='^[[3~'
 # minimal command prompt
 PS1='\u@\h -> '
 
+# sudo
+alias sudo="sudo "
+
 # ls with colors and human readable sizes
 alias ls="ls -h --color=auto"
 
@@ -27,7 +27,7 @@ alias ls="ls -h --color=auto"
 alias pacman-clean="pacman -Rsn $(pacman -Qdtq)"
 
 # update, clean and trim
-alias sysup="yaourt -Syyua; sudo pacman-clean; sudo pacman -Sc; sudo fstrim -va"
+alias sysup="yay -Syyu; sudo pacman-clean; sudo pacman -Sc; sudo fstrim -va"
 
 # pastebin
 alias sprunge="curl -F \"sprunge=<-\" http://sprunge.us"
