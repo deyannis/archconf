@@ -56,6 +56,13 @@ set viminfo='20,<2000,s2048,h
 hi SpellBad ctermfg=015 ctermbg=000
 hi SpellCap ctermfg=015 ctermbg=000
 
+" Set tab at 4 spaces for JS, JSON and HTML
+augroup FileTypeSpecificAutocommands
+	autocmd FileType javascript	setlocal tabstop=4 softtabstop=4 shiftwidth=4
+	autocmd FileType json		setlocal tabstop=4 softtabstop=4 shiftwidth=4
+	autocmd FileType html		setlocal tabstop=4 softtabstop=4 shiftwidth=4
+augroup END
+
 " Disable beeps and flashes
 set visualbell
 set noerrorbells
