@@ -1,6 +1,6 @@
 " Author:   Dimitris Deyannis
 " E-mail:   d.deyannis@gmail.com
-" Modified: Wed 25 Oct 2017
+" Modified: Wed 17 Feb 2023
 
 
 " Enable syntax highlighting
@@ -36,6 +36,9 @@ hi StatusLine	ctermfg=018 ctermbg=010
 hi StatusLineNC	ctermfg=018 ctermbg=010
 hi VertSplit	ctermfg=018 ctermbg=010
 
+" Enable mouse scroll
+set mouse=a
+
 " Display line numbers
 set number
 hi LineNr ctermfg=033
@@ -60,7 +63,8 @@ hi SpellCap ctermfg=015 ctermbg=000
 augroup FileTypeSpecificAutocommands
 	autocmd FileType javascript	setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType json		setlocal tabstop=4 softtabstop=4 shiftwidth=4
-	autocmd FileType html		setlocal tabstop=4 softtabstop=4 shiftwidth=4
+	autocmd FileType html		setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+	autocmd FileType css		setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
 
 " Disable beeps and flashes
