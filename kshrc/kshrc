@@ -38,3 +38,9 @@ alias ytd="youtube-dl -x --audio-format mp3 --audio-quality 0  \
 
 # update ksh 
 alias kshrc=". ~/.kshrc"
+
+# daemonize a job
+alias daemon="daemon"
+function daemon {
+	(exec "$@" &) > /dev/null 2>&1
+}
