@@ -61,6 +61,8 @@ hi SpellCap ctermfg=015 ctermbg=000
 
 " Set tab at 4 spaces for JS, JSON and HTML
 augroup FileTypeSpecificAutocommands
+	autocmd FileType tex		setlocal tabstop=4 softtabstop=4 shiftwidth=4
+	autocmd FileType md		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType javascript	setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType json		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType html		setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
