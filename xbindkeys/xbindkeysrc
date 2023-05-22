@@ -1,19 +1,10 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 28 Oct 2019
+# Modified: Mon 22 May 2023
 
 
-# sound settings
-"/usr/bin/pulseaudio-ctl up"
-	XF86AudioRaiseVolume
-
-"/usr/bin/pulseaudio-ctl down"
-	XF86AudioLowerVolume
-
-"/usr/bin/pulseaudio-ctl mute"
-	XF86AudioMute
-
-"/usr/bin/pulseaudio-ctl mute-input"
+# mic mute
+"pactl set-source-mute 0 toggle"
 	XF86AudioMicMute
 
 # display settings
@@ -34,8 +25,9 @@
 
 # screen lock
 "i3lock -i ~/Pictures/ss.png -t"
-	XF86Explorer
+	XF86Messenger
+#	XF86Explorer
 
 # print screen
 "xfce4-screenshooter -f"
-	Print
+	Mod4 + Print
