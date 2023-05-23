@@ -1,6 +1,6 @@
 " Author:   Dimitris Deyannis
 " E-mail:   d.deyannis@gmail.com
-" Modified: Wed 17 Feb 2023
+" Modified: Tue 23 May 2023
 
 
 " Enable syntax highlighting
@@ -37,7 +37,7 @@ hi StatusLineNC	ctermfg=018 ctermbg=010
 hi VertSplit	ctermfg=018 ctermbg=010
 
 " Enable mouse scroll
-set mouse=a
+set mouse=r
 
 " Display line numbers
 set number
@@ -61,6 +61,9 @@ hi SpellCap ctermfg=015 ctermbg=000
 
 " Set tab at 4 spaces for JS, JSON and HTML
 augroup FileTypeSpecificAutocommands
+	autocmd FileType log		setlocal tabstop=4 softtabstop=4 shiftwidth=4
+	autocmd FileType dat		setlocal tabstop=4 softtabstop=4 shiftwidth=4
+	autocmd FileType conf		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType tex		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType md		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType javascript	setlocal tabstop=4 softtabstop=4 shiftwidth=4

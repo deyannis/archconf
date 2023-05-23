@@ -19,9 +19,6 @@ xfce4-power-manager &
 # volume icon
 volumeicon &
 
-# dropox
-dropbox &
-
 # NetworkManager applet
 nm-applet &
 
@@ -34,6 +31,12 @@ setxkbmap -option "grp:switch,grp:alt_shift_toggle,grp_led:scroll" \
 
 # multimedia keys
 xbindkeys &
+
+# compositor
+picom --config ~/.config/picom/picom.conf -b
+
+# notifications
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 # i3 WM
 i3
