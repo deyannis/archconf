@@ -119,6 +119,10 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+gaps inner 10
+gaps outer 5
+smart_gaps on
+
 # start i3bar to display a workspace bar (plus the system
 # information i3status finds out, if available)
 bar {
@@ -127,7 +131,6 @@ bar {
 	colors {
 		background #000000
 		statusline #FFFFFF
-
 		focused_workspace  #ffffff #6600FF
 		active_workspace   #ffffff #6600FF 
 		inactive_workspace #ffffff #6600FF
