@@ -17,7 +17,8 @@
 
 # file manager
 "thunar"
-	XF86Search
+	XF86Favorites
+	#XF86Search
 
 # mail client
 "thunderbird"
