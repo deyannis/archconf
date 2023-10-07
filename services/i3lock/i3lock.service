@@ -3,7 +3,7 @@ Description=Lock screen before suspend
 Before=sleep.target
 
 [Service]
-User=ras
+User=<USER>
 Type=forking
 Environment=DISPLAY=:0
 ExecStart=/usr/local/bin/lock.sh

@@ -7,5 +7,5 @@ systemctl enable i3lock.service
 Locks the screen with i3lock before 
 putting the system to sleep
 
-Change "User" in the i3lock
-Change the picture patch in lock.sh
+Change <USER> in the i3lock
+Change the picture path in lock.sh
