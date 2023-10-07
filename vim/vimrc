@@ -1,6 +1,6 @@
 " Author:   Dimitris Deyannis
 " E-mail:   d.deyannis@gmail.com
-" Modified: Tue 23 May 2023
+" Modified: Sat 07 Oct 2023 @ 03:51:11 +0300
 
 
 " Enable syntax highlighting
@@ -16,7 +16,7 @@ set ignorecase
 set incsearch
 
 " Light background
-set background=light
+set background=dark
 
 " Visual mode color
 hi Visual ctermbg=018
@@ -59,7 +59,7 @@ set viminfo='20,<2000,s2048,h
 hi SpellBad ctermfg=015 ctermbg=000
 hi SpellCap ctermfg=015 ctermbg=000
 
-" Set tab at 4 spaces for JS, JSON and HTML
+" Set tab at 4 spaces for certain file types
 augroup FileTypeSpecificAutocommands
 	autocmd FileType log		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType dat		setlocal tabstop=4 softtabstop=4 shiftwidth=4
@@ -71,6 +71,12 @@ augroup FileTypeSpecificAutocommands
 	autocmd FileType html		setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 	autocmd FileType css		setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 augroup END
+
+" Change the 'Modified:' tag upon saving 
+" Covers both '@chdr' and '@shhdr' mappings
+autocmd Bufwritepre,filewritepre * execute "normal ma"
+autocmd Bufwritepre,filewritepre * exe "1," . 6 . "g/ Modified:.*/s/ Modified:.*/ Modified: " .strftime("%a %d %b %Y @ %H:%M:%S %z")
+autocmd bufwritepost,filewritepost * execute "normal `a"
 
 " Disable beeps and flashes
 set visualbell

@@ -7,8 +7,9 @@
 inoremap @chdr 
 \/*
 \<CR> * Author:   Dimitris Deyannis
-\<CR> * E-mail:   d.deyannis@gmail.com
-\<CR> * Modified: <C-R>=strftime("%a %d %b %Y")<CR>
+\<CR> * e-mail:   d.deyannis@gmail.com
+\<CR> * Created:  <C-R>=strftime("%a %d %b %Y @ %H:%M:%S %z")<CR>
+\<CR> * Modified: 
 \<CR> */
 \<CR><CR>
 
@@ -19,7 +20,8 @@ inoremap @shhdr
 \<CR>#
 \<CR># Author:   Dimitris Deyannis
 \<CR># E-mail:   d.deyannis@gmail.com
-\<CR># Modified: <C-R>=strftime("%a %d %b %Y")<CR>
+\<CR># Created:  <C-R>=strftime("%a %d %b %Y @ %H:%M:%S %z")<CR>
+\<CR># Modified: 
 \<CR><CR>
 
 
