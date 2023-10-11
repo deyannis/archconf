@@ -1,6 +1,6 @@
 " Author:   Dimitris Deyannis
 " E-mail:   d.deyannis@gmail.com
-" Modified: Sat 07 Oct 2023 @ 03:51:11 +0300
+" Modified: Sat 07 Oct 2023 @ 04:25:11 +0300
 
 
 " Enable syntax highlighting
@@ -41,6 +41,7 @@ set mouse=r
 
 " Display line numbers
 set number
+"set relativenumber
 hi LineNr ctermfg=033
 
 " Split right

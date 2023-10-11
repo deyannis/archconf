@@ -27,7 +27,7 @@ alias ls="ls -h --color=auto"
 alias pacman-clean="pacman -Rsn $(pacman -Qdtq)"
 
 # update, clean and trim
-alias sysup="yay -Syyu; sudo pacman-clean; sudo pacman -Sc; sudo fstrim -va"
+alias sysup="yay -Syyu; sudo pacman-clean; yes | yay -Scc; sudo fstrim -va"
 
 # pastebin
 alias sprunge="curl -F \"sprunge=<-\" http://sprunge.us"
