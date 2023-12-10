@@ -1,6 +1,6 @@
 " Author:   Dimitris Deyannis
 " E-mail:   d.deyannis@gmail.com
-" Modified: Sat 07 Oct 2023 @ 04:25:11 +0300
+" Modified: Sun 10 Dec 2023 @ 17:35:35 +0200
 
 
 " Enable syntax highlighting
@@ -37,7 +37,7 @@ hi StatusLineNC	ctermfg=018 ctermbg=010
 hi VertSplit	ctermfg=018 ctermbg=010
 
 " Enable mouse scroll
-set mouse=r
+set mouse=a
 
 " Display line numbers
 set number
@@ -65,6 +65,7 @@ augroup FileTypeSpecificAutocommands
 	autocmd FileType log		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType dat		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType conf		setlocal tabstop=4 softtabstop=4 shiftwidth=4
+	autocmd FileType sshconf	setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType tex		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType md		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType javascript	setlocal tabstop=4 softtabstop=4 shiftwidth=4
