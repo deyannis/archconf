@@ -1,7 +1,25 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 28 Oct 2019
+# Modified: Sun 18 Feb 2024 @ 04:54:43 +0200
 
 
 # set ksh ENV
 export ENV=$HOME/.kshrc
+
+# Keepass-XC with WSL2
+npiperelaypath=$(wslpath "C:/npiperelay")
+
+if [[ $(uname -a) == *"WSL2"* ]] && 
+    [ $(command -v socat) ]      && 
+    [ -e $npiperelaypath ]; then
+
+	export SSH_AUTH_SOCK=$HOME/.ssh/agent.sock
+
+	ss -a | grep -q $SSH_AUTH_SOCK
+	if [ $? -ne 0 ]; then
+
+		rm -f $SSH_AUTH_SOCK
+		(setsid socat UNIX-LISTEN:$SSH_AUTH_SOCK,fork \
+		EXEC:"$npiperelaypath/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent",nofork &) >/dev/null 2>&1
+	fi
+fi
