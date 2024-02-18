@@ -1,6 +1,6 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Sun 18 Feb 2024 @ 04:54:43 +0200
+# Modified: Sun 18 Feb 2024 @ 05:27:29 +0200
 
 
 # set ksh ENV
@@ -19,7 +19,6 @@ if [[ $(uname -a) == *"WSL2"* ]] &&
 	if [ $? -ne 0 ]; then
 
 		rm -f $SSH_AUTH_SOCK
-		(setsid socat UNIX-LISTEN:$SSH_AUTH_SOCK,fork \
-		EXEC:"$npiperelaypath/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent",nofork &) >/dev/null 2>&1
+		(setsid socat UNIX-LISTEN:$SSH_AUTH_SOCK,fork EXEC:"$npiperelaypath/npiperelay.exe -ei -s //./pipe/openssh-ssh-agent",nofork &) >/dev/null 2>&1
 	fi
 fi
