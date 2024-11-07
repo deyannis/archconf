@@ -2,7 +2,7 @@
 #
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Sat 17 Feb 2024 @ 22:45:14 +0200
+# Modified: Thu 07 Nov 2024 @ 13:18:25 +0200
 
 
 # vim as default editor
@@ -20,11 +20,14 @@ PS1='\u@\h -> '
 # sudo
 alias sudo="sudo "
 
+# sync process
+alias syncp="watch -d grep -e Dirty: -e Writeback: /proc/meminfo"
+
 # ls with colors and human readable sizes
 alias ls="ls -h --color=auto"
 
 # clean packages
-alias pacman-clean="pacman -Rsn $(pacman -Qdtq)"
+alias pacman-clean="pacman -Qdtq | sudo pacman -Rsn -"
 
 # update, clean and trim
 alias sysup="yay -Syyu; sudo pacman-clean; yes | yay -Scc; sudo fstrim -va"
@@ -33,7 +36,7 @@ alias sysup="yay -Syyu; sudo pacman-clean; yes | yay -Scc; sudo fstrim -va"
 alias sprunge="curl -F \"sprunge=<-\" http://sprunge.us"
 
 # YouTube to MP3
-alias ytd="youtube-dl -x --audio-format mp3 --audio-quality 0  \
+alias ytd="yt-dlp -x --audio-format mp3 --audio-quality 0  \
             -o '/home/ras/Documents/YTD/%(title)s.%(ext)s'"
 
 # update ksh 
