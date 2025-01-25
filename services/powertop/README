@@ -1,0 +1,3 @@
+cp powertop.service /etc/systemd/system/
+systemctl start powertop.service
+systemctl enable powertop.service
