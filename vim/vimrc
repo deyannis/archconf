@@ -64,7 +64,8 @@ hi SpellCap ctermfg=015 ctermbg=000
 augroup FileTypeSpecificAutocommands
 	autocmd FileType log		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType dat		setlocal tabstop=4 softtabstop=4 shiftwidth=4
-	autocmd FileType conf		setlocal tabstop=4 softtabstop=4 shiftwidth=4
+	autocmd FileType conf		setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
+	autocmd FileType xf86conf	setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 	autocmd FileType sshconf	setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType tex		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType md		setlocal tabstop=4 softtabstop=4 shiftwidth=4

@@ -1,24 +1,27 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 22 May 2023
+# Modified: Sat 25 Jan 2025 @ 23:31:29 +0200
 
 
 # mic mute
 "pactl set-source-mute 0 toggle"
 	XF86AudioMicMute
 
+# brightness up
+"brightnessctl s +100"
+	XF86MonBrightnessUp
+
+#brightness down
+"brightnessctl s 100-"
+	XF86MonBrightnessDown
+
 # display settings
 "arandr"
 	XF86Display
 
-# power settings
-"xfce4-power-manager-settings"
-	XF86Tools
-
 # file manager
 "thunar"
-	XF86Favorites
-	#XF86Search
+	XF86Search
 
 # mail client
 "thunderbird"
@@ -26,9 +29,8 @@
 
 # screen lock
 "i3lock -i ~/Pictures/ss.png -t"
-	XF86Messenger
-#	XF86Explorer
+	XF86Explorer
 
 # print screen
 "xfce4-screenshooter -f"
-	Mod4 + Print
+	Print
