@@ -1,2 +1,1 @@
-cp 50-synaptics.conf /etc/X11/xorg.conf.d
-cp 20-trackpoint.conf /etc/X11/xorg.conf.d
+cp xorg.conf.d/* /etc/X11/xorg.conf.d
