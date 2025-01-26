@@ -1,14 +1,21 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 27 Jan 2025 @ 01:41:43 +0200
+# Modified: Mon 27 Jan 2025 @ 01:49:29 +0200
 
 
 # set ksh ENV
 export ENV=$HOME/.kshrc
 
+# SSH agent
+if [[ $(uname -a) == *"arch"* ]]; then
+	eval $(ssh-agent)
+	export SSH_ASKPASS=ssh-askpass
+fi
+
+
 # Keepass-XC with WSL2
 if [[ $(uname -a) == *"WSL2"* ]] && 
-    [ $(command -v socat) ]; then
+    [ $(command -v socat) ]; then 
 
     npiperelaypath=$(wslpath "C:/npiperelay")
     if [ -e $npiperelaypath ]; then
