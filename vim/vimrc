@@ -1,6 +1,6 @@
 " Author:   Dimitris Deyannis
 " E-mail:   d.deyannis@gmail.com
-" Modified: Sun 10 Dec 2023 @ 17:35:35 +0200
+" Modified: Mon 27 Jan 2025 @ 01:11:59 +0200
 
 
 " Enable syntax highlighting
@@ -37,7 +37,7 @@ hi StatusLineNC	ctermfg=018 ctermbg=010
 hi VertSplit	ctermfg=018 ctermbg=010
 
 " Enable mouse scroll
-set mouse=a
+set mouse=nvi
 
 " Display line numbers
 set number
@@ -48,7 +48,7 @@ hi LineNr ctermfg=033
 set splitright
 
 " Use system clipboard
-set clipboard=unnamedplus
+set clipboard=unnamedplus,unnamed
 
 " Up to 20 files
 " Save up to 2000 lines
@@ -67,12 +67,14 @@ augroup FileTypeSpecificAutocommands
 	autocmd FileType conf		setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 	autocmd FileType xf86conf	setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 	autocmd FileType sshconf	setlocal tabstop=4 softtabstop=4 shiftwidth=4
+	autocmd FileType i3config	setlocal tabstop=4 softtabstop=4 shiftwidth=4 expandtab
 	autocmd FileType tex		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType md		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType javascript	setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType json		setlocal tabstop=4 softtabstop=4 shiftwidth=4
 	autocmd FileType html		setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 	autocmd FileType css		setlocal tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+	autocmd FileType sh		setlocal tabstop=2 softtabstop=2 shiftwidth=2
 augroup END
 
 " Change the 'Modified:' tag upon saving 
