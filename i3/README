@@ -1,5 +1,5 @@
 NOTE:	You may need to change the interfaces' names and the path to CPU temp.
 
-cp config ~/.i3
+cp config ~/.config/i3
 cp i3status.conf /etc
 cp i3-sensible-terminal /usr/bin/
