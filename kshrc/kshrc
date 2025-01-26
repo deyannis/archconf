@@ -2,7 +2,7 @@
 #
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Thu 07 Nov 2024 @ 13:18:25 +0200
+# Modified: Sun 26 Jan 2025 @ 05:27:11 +0200
 
 
 # vim as default editor
@@ -38,6 +38,12 @@ alias sprunge="curl -F \"sprunge=<-\" http://sprunge.us"
 # YouTube to MP3
 alias ytd="yt-dlp -x --audio-format mp3 --audio-quality 0  \
             -o '/home/ras/Documents/YTD/%(title)s.%(ext)s'"
+
+# colordif
+alias diff="colordiff"
+
+# find pango font name
+alias pango="pango-list | grep -i"
 
 # update ksh 
 alias kshrc=". ~/.kshrc"
