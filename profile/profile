@@ -1,14 +1,18 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 27 Jan 2025 @ 01:49:29 +0200
+# Modified: Mon 27 Jan 2025 @ 16:25:37 +0200
 
 
 # set ksh ENV
 export ENV=$HOME/.kshrc
 
+
 # SSH agent
 if [[ $(uname -a) == *"arch"* ]]; then
-	eval $(ssh-agent)
+	if ! test "$SSH_AUTH_SOCK" ; then
+		eval $(ssh-agent)
+	fi
+	ln -sf $SSH_AUTH_SOCK ~/.ssh/ssh_auth_sock
 	export SSH_ASKPASS=ssh-askpass
 fi
 
