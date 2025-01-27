@@ -1,16 +1,5 @@
-* Set efault browser to chrome
-	xdg-mime default google-chrome.desktop x-scheme-handler/https
-	xdg-mime default google-chrome.desktop x-scheme-handler/http
-
 * Disable mobo speaker
 	echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
-
-* Enable thunar samba and remote locations browsing
-	packages: gvfs-smb sshfs hal-info hal thunar-vfs tunar-shares-plugin
-	smb://xxxxxx
-
-* Fix Dropbox opens Audacious
-	xdg-mime default Thunar.desktop inode/directory
 
 *  Fix pasting inserts trash
 	printf "\e[?2004l"
