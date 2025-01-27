@@ -2,7 +2,7 @@
 #
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 27 Jan 2025 @ 01:56:03 +0200
+# Modified: Mon 27 Jan 2025 @ 16:51:33 +0200
 
 
 # dbus magic
@@ -34,7 +34,7 @@ setxkbmap -option "grp:switch,grp:alt_shift_toggle,grp_led:scroll" \
 xbindkeys &
 
 # compositor
-#picom --config ~/.config/picom/picom.conf -b
+picom --config ~/.config/picom/picom.conf -b
 
 # notifications
 #/usr/lib/xfce4/notifyd/xfce4-notifyd &
