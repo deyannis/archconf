@@ -1,6 +1,6 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Sun 26 Jan 2025 @ 22:54:19 +0200
+# Modified: Tue 28 Jan 2025 @ 00:23:33 +0200
 
 
 # Should you change your keyboard layout somewhen, delete
@@ -149,7 +149,8 @@ set $aurora4 #b48ead
 # start i3bar to display a workspace bar (plus the system
 # information i3status finds out, if available)
 bar {
-    status_command i3status
+    # status_command i3status
+    status_command ~/.config/scripts/i3status_plus.sh
     position top
     colors {
         # bar 

@@ -1,6 +1,6 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Sat 25 Jan 2025 @ 23:31:29 +0200
+# Modified: Mon 27 Jan 2025 @ 23:52:15 +0200
 
 
 # mic mute
@@ -12,7 +12,7 @@
 	XF86MonBrightnessUp
 
 #brightness down
-"brightnessctl s 100-"
+"brightnessctl s 100- --min-value=37"
 	XF86MonBrightnessDown
 
 # display settings
@@ -26,10 +26,6 @@
 # mail client
 "thunderbird"
 	XF86LaunchA
-
-# screen lock
-"i3lock -i ~/Pictures/ss.png -t"
-	XF86Explorer
 
 # print screen
 "xfce4-screenshooter -f"
