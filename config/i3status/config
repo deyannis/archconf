@@ -1,0 +1,132 @@
+# Author:   Dimitris Deyannis
+# E-mail:   d.deyannis@gmail.com
+# Modified: Mon 27 Jan 2025 @ 00:57:34 +0200
+
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+# If ASCII glyphs are not displayed properly change the i3 status fonts
+# via i3 config
+
+
+general {
+    colors = true
+    interval = 2
+    color_good     = "#ebcb8b"
+    color_degraded = "#d08770"
+    color_bad      = "#bf616a"
+}
+
+order += "cpu_temperature 0"
+order += "cpu_temperature 1"
+order += "cpu_temperature 2"
+order += "cpu_temperature 3"
+order += "cpu_usage"
+order += "load"
+order += "memory"
+order += "disk /"
+order += "wireless wlan0"
+order += "ethernet enp0s25"
+order += "ethernet wg0"
+order += "battery 0"
+#order += "tztime athens"
+order += "tztime local"
+
+
+cpu_temperature 0 {
+	format = " %degrees"
+    separator = false
+	path = "/sys/class/thermal/thermal_zone3/temp"
+}
+
+cpu_temperature 1 {
+	# format = "ACPI: %degrees °C"
+	format = "%degrees"
+    separator = false
+	path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+cpu_temperature 2 {
+	# format = "PCH: %degrees °C"
+	format = "%degrees"
+    separator = false
+	path = "/sys/class/thermal/thermal_zone1/temp"
+}
+
+cpu_temperature 3 {
+	# format = "Wi-Fi: %degrees °C"
+	format = "%degrees °C"
+	path = "/sys/class/thermal/thermal_zone2/temp"
+    separator_block_width = 16
+}
+
+cpu_usage {
+	format = "  %usage"
+    separator = false
+}
+
+load {
+    format = "%1min"
+    separator_block_width = 16
+}
+
+memory {
+    format = " %free / %total" 
+    decimals = 1
+    threshold_degraded = "20%"
+    threshold_critical = "10%"
+    separator_block_width = 16
+}
+
+disk "/" {
+    format = "  %avail / %total"
+	threshold_type = "percentage_avail"
+	low_threshold = 20
+    separator_block_width = 16
+}
+
+wireless wlan0 {
+    format_up = "   %ip  %essid  %quality  [ %bitrate ]  %frequency"
+    format_down = " "
+    separator_block_width = 16
+}
+
+ethernet enp0s25 {
+    format_up = " %ip  %speed"
+    format_down = ""
+    separator_block_width = 16
+}
+
+ethernet wg0 {
+	format_up = " %ip"
+	format_down = "" 
+    separator_block_width = 16
+}
+
+battery 0 {
+	format = "%status %percentage  %remaining  %consumption"
+    status_chr = " "
+    status_bat = "🔋 "
+	integer_battery_capacity = true
+	threshold_type = percentage
+	low_threshold = 25
+    min_width = 140
+    align = "center"
+    separator_block_width = 16
+}
+
+tztime local {
+    format = "(%a) %d/%m/%Y %H:%M"
+    separator_block_width = 16
+}
+
+tztime athens {
+	format = "Athens: %H:%M"
+	timezone = "Europe/Athens"
+    separator_block_width = 16
+}
