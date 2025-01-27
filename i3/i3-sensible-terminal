@@ -2,7 +2,7 @@
 #
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 28 Oct 2019
+# Modified: Mon 27 Jan 2025 @ 01:58:52 +0200
 #
 # This code is released in public domain by Han Boetes <han@mijncomputer.nl>
 #
@@ -12,7 +12,7 @@
 # Distributions/packagers should enhance this script with a
 # distribution-specific mechanism to find the preferred terminal emulator. On
 # Debian, there is the x-terminal-emulator symlink for example.
-for terminal in $TERMINAL st gnome-terminal xterm roxterm xfce4-terminal
+for terminal in $TERMINAL st gnome-terminal kitty xfce4-terminal xterm
 do
 	if which $terminal > /dev/null 2>&1
 	then
