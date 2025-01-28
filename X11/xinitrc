@@ -2,7 +2,7 @@
 #
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 27 Jan 2025 @ 16:51:33 +0200
+# Modified: Tue 28 Jan 2025 @ 04:00:32 +0200
 
 
 # dbus magic
@@ -29,9 +29,6 @@ blueman-applet &
 # GR - EN shift
 setxkbmap -option "grp:switch,grp:alt_shift_toggle,grp_led:scroll" \
 	-layout "us,gr"
-
-# multimedia keys
-xbindkeys &
 
 # compositor
 picom --config ~/.config/picom/picom.conf -b

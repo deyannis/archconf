@@ -1,32 +1,32 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Mon 27 Jan 2025 @ 23:52:15 +0200
+# Modified: Tue 28 Jan 2025 @ 04:03:35 +0200
 
 
 # mic mute
-"pactl set-source-mute 0 toggle"
-	XF86AudioMicMute
+#"pactl set-source-mute 0 toggle"
+#	XF86AudioMicMute
 
 # brightness up
-"brightnessctl s +100"
-	XF86MonBrightnessUp
+#"brightnessctl s +100"
+#	XF86MonBrightnessUp
 
 #brightness down
-"brightnessctl s 100- --min-value=37"
-	XF86MonBrightnessDown
+#"brightnessctl s 100- --min-value=37"
+#	XF86MonBrightnessDown
 
 # display settings
-"arandr"
-	XF86Display
+#"arandr"
+#	XF86Display
 
 # file manager
-"thunar"
-	XF86Search
+#"thunar"
+#	XF86Search
 
 # mail client
-"~/.config/scripts/night_light.sh"
-	XF86LaunchA
+#"~/.config/scripts/night_light.sh"
+#	XF86LaunchA
 
 # print screen
-"xfce4-screenshooter -f"
-	Print
+#"xfce4-screenshooter -f"
+#	Print
