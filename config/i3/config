@@ -1,6 +1,6 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Tue 28 Jan 2025 @ 00:23:33 +0200
+# Modified: Tue 28 Jan 2025 @ 03:02:59 +0200
 
 
 # Should you change your keyboard layout somewhen, delete
@@ -28,13 +28,32 @@ bindsym $mod+Shift+q kill
 # start dmenu
 bindsym $mod+d exec dmenu_run
 
+# mic mute
+bindsym XF86AudioMicMute exec pactl set-source-mute 0 toggle
+
+# brightness up
+bindsym XF86MonBrightnessUp exec brightnessctl s +100
+
+#brightness down
+bindsym XF86MonBrightnessDown exec brightnessctl s 100- --min-value=37
+	
+# display settings
+bindsym XF86Display exec ~/.config/scripts/toggle_arandr.sh
+
+# toggle compositor
+bindsym XF86Tools exec ~/.config/scripts/toggle_compositor.sh
+
+# file manager
+bindsym XF86Search exec thunar
+
+# toggle night light
+bindsym XF86LaunchA exec ~/.config/scripts/night_light.sh
+
 # screen lock
-#bindsym XF86Explorer exec i3lock -e -f -i ~/Pictures/ss.png -t 
 bindsym XF86Explorer exec /bin/sh ~/.config/scripts/lock.sh 
 
-# start i3-dmenu-desktop which only displays applications
-# shipping a .desktop file
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# print screen
+bindsym Print exec xfce4-screenshooter -f
 
 # change focus
 bindsym $mod+Left focus left
