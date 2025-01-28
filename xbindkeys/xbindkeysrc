@@ -24,7 +24,7 @@
 	XF86Search
 
 # mail client
-"thunderbird"
+"~/.config/scripts/night_light.sh"
 	XF86LaunchA
 
 # print screen
