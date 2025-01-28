@@ -1,0 +1,2 @@
+cp logind.conf /etc/systemd/
+systemctl restart systemd-logind.service
