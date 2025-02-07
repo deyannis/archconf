@@ -1,6 +1,6 @@
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Tue 28 Jan 2025 @ 03:02:59 +0200
+# Modified: Fri 07 Feb 2025 @ 16:28:51 +0200
 
 
 # Should you change your keyboard layout somewhen, delete
@@ -207,10 +207,17 @@ for_window [class="KeePassXC"]                  floating enable
 for_window [class="Windscribe2"] border none
 
 # resize
-for_window [class="pavucontrol"]            resize set 720 440
-for_window [class="Nwg-look"]               resize set 650 450
-for_window [class="Yubico-authenticator"]   resize set 840 640
-for_window [class="KeePassXC"]              resize set 1000 640
+for_window [class="pavucontrol"]                        resize set 720 440
+for_window [class="Nwg-look"]                           resize set 650 450
+for_window [class="Yubico-authenticator"]               resize set 840 640
+for_window [class="KeePassXC"]                          resize set 1000 640
+for_window [title="KeePassXC - Browser Access Request"] resize set 480 200
+
+# position
+for_window [class="pavucontrol"]                        move position 1195 30
+for_window [class="Yubico-authenticator"]               move position 1080 30
+for_window [class="KeePassXC"]                          move position center
+for_window [title="KeePassXC - Browser Access Request"] move position center
 
 # wallpaper
 exec --no-startup-id sh ~/.fehbg
