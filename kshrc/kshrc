@@ -2,7 +2,7 @@
 #
 # Author:   Dimitris Deyannis
 # E-mail:   d.deyannis@gmail.com
-# Modified: Sun 26 Jan 2025 @ 05:27:11 +0200
+# Modified: Wed 30 Apr 2025 @ 03:54:44 +0200
 
 
 # vim as default editor
@@ -44,6 +44,12 @@ alias diff="colordiff"
 
 # find pango font name
 alias pango="pango-list | grep -i"
+
+# create SSH-sk key
+alias skkey="gen_sk_key"
+function gen_sk_key {
+  ssh-keygen -t ed25519-sk -C $1 -f $2
+}
 
 # update ksh 
 alias kshrc=". ~/.kshrc"
