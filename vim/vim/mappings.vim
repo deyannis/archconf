@@ -1,6 +1,6 @@
 " Author:   Dimitris Deyannis
 " E-mail:   d.deyannis@gmail.com
-" Modified: Wed 25 Oct 2017
+" Modified: Tue 08 Jul 2025 @ 04:58:43 +0200
 
 
 " C file header
@@ -44,3 +44,6 @@ inoremap @cmain
 \<CR>
 \<CR>/* EOF */
 \<UP><UP><UP><UP><UP><RIGHT>
+
+" Replace Ctrl-v for WSL
+nnoremap <c-q> <c-v>
